@@ -53,6 +53,12 @@ observed [x,y,vx,vy]
 scripts\run_eth_ucy_ablation_remaining.cmd
 ```
 
+Linux 服务器用：
+
+```bash
+bash scripts/run_eth_ucy_ablation_remaining.sh
+```
+
 单独跑某个数据集：
 
 ```cmd
@@ -61,10 +67,24 @@ scripts\run_eth_ucy_ablation_remaining.cmd zara1
 scripts\run_eth_ucy_ablation_remaining.cmd zara2
 ```
 
+Linux 服务器单独跑：
+
+```bash
+bash scripts/run_eth_ucy_ablation_remaining.sh univ
+bash scripts/run_eth_ucy_ablation_remaining.sh zara1
+bash scripts/run_eth_ucy_ablation_remaining.sh zara2
+```
+
 先检查命令，不启动训练：
 
 ```cmd
 scripts\run_eth_ucy_ablation_remaining.cmd --dry-run univ
+```
+
+Linux 服务器 dry-run：
+
+```bash
+bash scripts/run_eth_ucy_ablation_remaining.sh --dry-run univ
 ```
 
 每组输出目录：
