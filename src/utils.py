@@ -4,6 +4,7 @@ import random
 import time
 import numpy as np
 import torch
+import torch.nn.functional as F
 
 DATASET_NAME_TO_NUM = {
     'eth': 0,
@@ -493,10 +494,7 @@ def getLossMask(outputs, node_first, seq_list, using_cuda=False):
         seq_length = outputs.shape[1]
 
     node_pre = node_first
-    lossmask = torch.zeros(seq_length, seq_list.shape[1])
-
-    if using_cuda:
-        lossmask = lossmask.cuda()
+    lossmask = torch.zeros(seq_length, seq_list.shape[1], dtype=seq_list.dtype, device=seq_list.device)
 
     # For loss mask, only generate for those exist through the whole window
     for framenum in range(seq_length):
@@ -506,6 +504,81 @@ def getLossMask(outputs, node_first, seq_list, using_cuda=False):
             lossmask[framenum] = seq_list[framenum] * lossmask[framenum - 1]
 
     return lossmask, sum(sum(lossmask))
+
+
+def getFutureLossMask(seq_list, obs_length, pred_length, using_cuda=False):
+    """
+    Mask future targets for pedestrians that are present throughout observation
+    and remain present up to each future step.
+    """
+    lossmask = torch.zeros(pred_length, seq_list.shape[1], dtype=seq_list.dtype, device=seq_list.device)
+    obs_present = seq_list[:obs_length].gt(0).all(dim=0).type_as(seq_list)
+    running_present = obs_present
+
+    for step in range(pred_length):
+        frame = obs_length + step
+        if frame >= seq_list.shape[0]:
+            break
+        running_present = running_present * seq_list[frame].gt(0).type_as(seq_list)
+        lossmask[step] = running_present
+
+    return lossmask, torch.sum(lossmask)
+
+
+def maskedBestOfKLoss(outputs, targets, lossMask, fde_weight=0.2):
+    """
+    Best-of-K future trajectory loss.
+
+    outputs: [K, T_pred, N, 2]
+    targets: [T_pred, N, 2]
+    lossMask: [T_pred, N]
+    """
+    mask = lossMask.float()
+    valid_ped = mask.sum(dim=0).gt(0)
+    zero = outputs.sum() * 0.0
+    if int(valid_ped.sum().item()) == 0:
+        return zero, zero.detach(), zero.detach()
+
+    dist = torch.norm(outputs - targets.unsqueeze(0), p=2, dim=-1)
+    denom = mask.sum(dim=0).clamp_min(1.0)
+    ade_per_sample = torch.sum(dist * mask.unsqueeze(0), dim=1) / denom.unsqueeze(0)
+
+    best_ade = ade_per_sample[:, valid_ped].min(dim=0).values.mean()
+
+    fde_valid = lossMask[-1].gt(0)
+    if int(fde_valid.sum().item()) > 0:
+        final_dist = dist[:, -1, fde_valid]
+        best_fde = final_dist.min(dim=0).values.mean()
+    else:
+        best_fde = zero
+
+    return best_ade + fde_weight * best_fde, best_ade.detach(), best_fde.detach()
+
+
+def trajectoryDiversityLoss(outputs, lossMask, margin=0.2):
+    """
+    Encourage different decoder heads to keep distinct final endpoints.
+
+    outputs: [K, T_pred, N, 2]
+    lossMask: [T_pred, N]
+    """
+    zero = outputs.sum() * 0.0
+    if outputs.shape[0] <= 1:
+        return zero
+
+    valid_ped = lossMask[-1].gt(0)
+    if int(valid_ped.sum().item()) == 0:
+        return zero
+
+    final_points = outputs[:, -1, valid_ped, :].permute(1, 0, 2)
+    pair_dist = torch.cdist(final_points, final_points, p=2)
+    num_heads = outputs.shape[0]
+    off_diag = ~torch.eye(num_heads, dtype=torch.bool, device=outputs.device).unsqueeze(0)
+    off_diag = off_diag.expand(pair_dist.shape[0], -1, -1)
+    penalty = F.relu(margin - pair_dist)[off_diag].pow(2)
+    if penalty.numel() == 0:
+        return zero
+    return penalty.mean()
 
 
 def L2forTest(outputs, targets, obs_length, lossMask):
@@ -523,6 +596,37 @@ def L2forTest(outputs, targets, obs_length, lossMask):
     final_error_cnt = error_full[-1].numel()
 
     return error.item(), error_cnt, final_error.item(), final_error_cnt, error_full
+
+
+def L2forTestK(outputs, targets, lossMask):
+    """
+    Evaluate K trajectories emitted by one forward pass.
+
+    outputs: [K, T_pred, N, 2]
+    targets: [T_pred, N, 2]
+    lossMask: [T_pred, N]
+    """
+    seq_length = outputs.shape[1]
+    error = torch.norm(outputs - targets.unsqueeze(0), p=2, dim=3)
+    pedi_full = torch.sum(lossMask, dim=0) == seq_length
+
+    if int(pedi_full.sum().item()) == 0:
+        return 0.0, 0, 0.0, 0
+
+    error_full = error[:, :, pedi_full]
+    ade_per_sample = torch.sum(error_full, dim=1)
+    min_ade = torch.min(ade_per_sample, dim=0).values
+
+    final_per_sample = error_full[:, -1, :]
+    min_fde = torch.min(final_per_sample, dim=0).values
+
+    error = torch.sum(min_ade)
+    error_cnt = seq_length * error_full.shape[2]
+
+    final_error = torch.sum(min_fde)
+    final_error_cnt = error_full.shape[2]
+
+    return error.item(), error_cnt, final_error.item(), final_error_cnt
 
 
 def L2forTestS(outputs, targets, obs_length, lossMask, num_samples=20):
