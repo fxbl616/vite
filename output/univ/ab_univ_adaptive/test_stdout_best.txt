@@ -1,0 +1,41 @@
+/root/autodl-tmp/vite/src/star.py:1019: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.temporal_encoder = nn.TransformerEncoder(temporal_layer, num_layers=1)
+Creating pre-processed data from raw data.
+0 360
+100 360
+200 360
+300 360
+0 389
+100 389
+200 389
+300 389
+0 148
+100 148
+0 204
+100 204
+200 204
+0 118
+100 118
+0 137
+100 137
+0 415
+100 415
+200 415
+300 415
+400 415
+0 434
+100 434
+200 434
+300 434
+400 434
+Done.
+Preparing data batches.
+Done.
+Total number of training batches: 109
+Total number of test batches: 136
+Testing begin
+./output/univ/ab_univ_adaptive/ab_univ_adaptive_best.tar
+Loading checkpoint
+Loaded checkpoint at epoch 70
+  0%|          | 0/136 [00:00<?, ?it/s]  1%|          | 1/136 [00:00<00:43,  3.11it/s]  5%|▌         | 7/136 [00:00<00:06, 20.07it/s] 10%|▉         | 13/136 [00:00<00:03, 31.49it/s] 14%|█▍        | 19/136 [00:00<00:03, 38.49it/s] 18%|█▊        | 25/136 [00:00<00:02, 43.55it/s] 23%|██▎       | 31/136 [00:00<00:02, 47.71it/s] 27%|██▋       | 37/136 [00:00<00:01, 50.17it/s] 32%|███▏      | 43/136 [00:01<00:01, 51.60it/s] 36%|███▌      | 49/136 [00:01<00:01, 53.21it/s] 40%|████      | 55/136 [00:01<00:01, 54.44it/s] 45%|████▍     | 61/136 [00:01<00:01, 54.99it/s] 49%|████▉     | 67/136 [00:01<00:01, 56.21it/s] 54%|█████▎    | 73/136 [00:01<00:01, 54.17it/s] 58%|█████▊    | 79/136 [00:01<00:01, 53.21it/s] 62%|██████▎   | 85/136 [00:01<00:00, 53.27it/s] 67%|██████▋   | 91/136 [00:01<00:00, 53.60it/s] 71%|███████▏  | 97/136 [00:02<00:00, 52.74it/s] 76%|███████▌  | 103/136 [00:02<00:00, 52.96it/s] 80%|████████  | 109/136 [00:02<00:00, 52.78it/s] 85%|████████▍ | 115/136 [00:02<00:00, 53.07it/s] 89%|████████▉ | 121/136 [00:02<00:00, 52.40it/s] 93%|█████████▎| 127/136 [00:02<00:00, 51.38it/s] 98%|█████████▊| 133/136 [00:02<00:00, 48.78it/s]100%|██████████| 136/136 [00:02<00:00, 47.59it/s]
+Set: 4, epoch: best,test_error: 0.21545305115400887 test_final_error: 0.3775930918658838

@@ -1,0 +1,41 @@
+/root/autodl-tmp/vite/src/star.py:1019: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.temporal_encoder = nn.TransformerEncoder(temporal_layer, num_layers=1)
+Creating pre-processed data from raw data.
+0 360
+100 360
+200 360
+300 360
+0 389
+100 389
+200 389
+300 389
+0 148
+100 148
+0 204
+100 204
+200 204
+0 118
+100 118
+0 137
+100 137
+0 415
+100 415
+200 415
+300 415
+400 415
+0 434
+100 434
+200 434
+300 434
+400 434
+Done.
+Preparing data batches.
+Done.
+Total number of training batches: 109
+Total number of test batches: 136
+Testing begin
+./output/univ/ab_univ_adaptive_no_motion/ab_univ_adaptive_no_motion_best.tar
+Loading checkpoint
+Loaded checkpoint at epoch 250
+  0%|          | 0/136 [00:00<?, ?it/s]  1%|          | 1/136 [00:00<00:41,  3.24it/s]  5%|▌         | 7/136 [00:00<00:06, 20.34it/s] 10%|▉         | 13/136 [00:00<00:03, 31.66it/s] 13%|█▎        | 18/136 [00:00<00:03, 36.75it/s] 18%|█▊        | 24/136 [00:00<00:02, 42.26it/s] 22%|██▏       | 30/136 [00:00<00:02, 45.31it/s] 26%|██▋       | 36/136 [00:00<00:02, 48.54it/s] 31%|███       | 42/136 [00:01<00:01, 50.47it/s] 35%|███▌      | 48/136 [00:01<00:01, 52.15it/s] 40%|███▉      | 54/136 [00:01<00:01, 53.88it/s] 44%|████▍     | 60/136 [00:01<00:01, 53.86it/s] 49%|████▊     | 66/136 [00:01<00:01, 54.34it/s] 53%|█████▎    | 72/136 [00:01<00:01, 54.48it/s] 57%|█████▋    | 78/136 [00:01<00:01, 53.79it/s] 62%|██████▏   | 84/136 [00:01<00:00, 53.47it/s] 66%|██████▌   | 90/136 [00:01<00:00, 53.82it/s] 71%|███████   | 96/136 [00:02<00:00, 52.87it/s] 75%|███████▌  | 102/136 [00:02<00:00, 52.71it/s] 79%|███████▉  | 108/136 [00:02<00:00, 52.87it/s] 84%|████████▍ | 114/136 [00:02<00:00, 52.55it/s] 88%|████████▊ | 120/136 [00:02<00:00, 51.61it/s] 93%|█████████▎| 126/136 [00:02<00:00, 50.97it/s] 97%|█████████▋| 132/136 [00:02<00:00, 47.92it/s]100%|██████████| 136/136 [00:02<00:00, 46.92it/s]
+Set: 4, epoch: best,test_error: 0.21537602324401955 test_final_error: 0.3734674337759144

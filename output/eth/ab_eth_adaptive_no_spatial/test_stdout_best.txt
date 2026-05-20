@@ -1,0 +1,41 @@
+/root/autodl-tmp/vite/src/star.py:1019: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.temporal_encoder = nn.TransformerEncoder(temporal_layer, num_layers=1)
+Creating pre-processed data from raw data.
+0 389
+100 389
+200 389
+300 389
+0 148
+100 148
+0 204
+100 204
+200 204
+0 415
+100 415
+200 415
+300 415
+400 415
+0 434
+100 434
+200 434
+300 434
+400 434
+0 118
+100 118
+0 137
+100 137
+0 360
+100 360
+200 360
+300 360
+Done.
+Preparing data batches.
+Done.
+Total number of training batches: 222
+Total number of test batches: 24
+Testing begin
+./output/eth/ab_eth_adaptive_no_spatial/ab_eth_adaptive_no_spatial_best.tar
+Loading checkpoint
+Loaded checkpoint at epoch 206
+  0%|          | 0/24 [00:00<?, ?it/s]  4%|▍         | 1/24 [00:00<00:07,  3.23it/s] 17%|█▋        | 4/24 [00:00<00:01, 10.84it/s] 29%|██▉       | 7/24 [00:00<00:01, 15.79it/s] 42%|████▏     | 10/24 [00:00<00:00, 18.82it/s] 54%|█████▍    | 13/24 [00:00<00:00, 21.82it/s] 71%|███████   | 17/24 [00:00<00:00, 26.15it/s] 88%|████████▊ | 21/24 [00:00<00:00, 29.69it/s]100%|██████████| 24/24 [00:01<00:00, 22.54it/s]
+Set: 0, epoch: best,test_error: 0.2713418927008098 test_final_error: 0.41699643958378313

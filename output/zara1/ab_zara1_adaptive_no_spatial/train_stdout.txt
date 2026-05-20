@@ -1,0 +1,790 @@
+/root/autodl-tmp/vite/src/star.py:1019: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.temporal_encoder = nn.TransformerEncoder(temporal_layer, num_layers=1)
+Creating pre-processed data from raw data.
+0 360
+100 360
+200 360
+300 360
+0 389
+100 389
+200 389
+300 389
+0 204
+100 204
+200 204
+0 415
+100 415
+200 415
+300 415
+400 415
+0 434
+100 434
+200 434
+300 434
+400 434
+0 118
+100 118
+0 137
+100 137
+0 148
+100 148
+Done.
+Preparing data batches.
+Done.
+Total number of training batches: 228
+Total number of test batches: 17
+Training begin
+train-0/228 (epoch 0), train_loss = 1.16754, time/batch = 0.48792 
+train-100/228 (epoch 0), train_loss = 0.34187, time/batch = 0.08778 
+train-200/228 (epoch 0), train_loss = 0.37614, time/batch = 0.08651 
+----epoch 0, train_loss=0.41257
+train-0/228 (epoch 1), train_loss = 0.38597, time/batch = 0.08818 
+train-100/228 (epoch 1), train_loss = 0.34066, time/batch = 0.08588 
+train-200/228 (epoch 1), train_loss = 0.37619, time/batch = 0.08749 
+----epoch 1, train_loss=0.37352
+train-0/228 (epoch 2), train_loss = 0.38056, time/batch = 0.08389 
+train-100/228 (epoch 2), train_loss = 0.34048, time/batch = 0.08435 
+train-200/228 (epoch 2), train_loss = 0.35435, time/batch = 0.08880 
+----epoch 2, train_loss=0.36873
+train-0/228 (epoch 3), train_loss = 0.36141, time/batch = 0.08461 
+train-100/228 (epoch 3), train_loss = 0.33754, time/batch = 0.08626 
+train-200/228 (epoch 3), train_loss = 0.36036, time/batch = 0.08816 
+----epoch 3, train_loss=0.36715
+train-0/228 (epoch 4), train_loss = 0.36803, time/batch = 0.07956 
+train-100/228 (epoch 4), train_loss = 0.33416, time/batch = 0.08218 
+train-200/228 (epoch 4), train_loss = 0.36767, time/batch = 0.08701 
+----epoch 4, train_loss=0.36428
+train-0/228 (epoch 5), train_loss = 0.37494, time/batch = 0.08334 
+train-100/228 (epoch 5), train_loss = 0.33124, time/batch = 0.08736 
+train-200/228 (epoch 5), train_loss = 0.35380, time/batch = 0.08839 
+----epoch 5, train_loss=0.36305
+train-0/228 (epoch 6), train_loss = 0.36111, time/batch = 0.08345 
+train-100/228 (epoch 6), train_loss = 0.32220, time/batch = 0.08155 
+train-200/228 (epoch 6), train_loss = 0.35174, time/batch = 0.08656 
+----epoch 6, train_loss=0.36223
+train-0/228 (epoch 7), train_loss = 0.37015, time/batch = 0.08124 
+train-100/228 (epoch 7), train_loss = 0.33477, time/batch = 0.08664 
+train-200/228 (epoch 7), train_loss = 0.36965, time/batch = 0.07465 
+----epoch 7, train_loss=0.36123
+train-0/228 (epoch 8), train_loss = 0.34575, time/batch = 0.08325 
+train-100/228 (epoch 8), train_loss = 0.32488, time/batch = 0.08422 
+train-200/228 (epoch 8), train_loss = 0.36592, time/batch = 0.08450 
+----epoch 8, train_loss=0.36119
+train-0/228 (epoch 9), train_loss = 0.36671, time/batch = 0.08604 
+train-100/228 (epoch 9), train_loss = 0.32709, time/batch = 0.08568 
+train-200/228 (epoch 9), train_loss = 0.36435, time/batch = 0.09366 
+----epoch 9, train_loss=0.35905
+train-0/228 (epoch 10), train_loss = 0.35986, time/batch = 0.07856 
+train-100/228 (epoch 10), train_loss = 0.33358, time/batch = 0.09346 
+train-200/228 (epoch 10), train_loss = 0.35799, time/batch = 0.09421 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.85it/s] 41%|████      | 7/17 [00:00<00:00, 30.42it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.60it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.34it/s]100%|██████████| 17/17 [00:00<00:00, 33.43it/s]
+----epoch 10, train_loss=0.35926, ADE=0.196, FDE=0.341, Best_ADE=0.196, Best_FDE=0.341 at Epoch 10
+train-0/228 (epoch 11), train_loss = 0.35202, time/batch = 0.07587 
+train-100/228 (epoch 11), train_loss = 0.33003, time/batch = 0.09625 
+train-200/228 (epoch 11), train_loss = 0.36150, time/batch = 0.08865 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.75it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.55it/s] 53%|█████▎    | 9/17 [00:00<00:00, 28.81it/s] 82%|████████▏ | 14/17 [00:00<00:00, 33.86it/s]100%|██████████| 17/17 [00:00<00:00, 32.57it/s]
+----epoch 11, train_loss=0.35780, ADE=0.197, FDE=0.346, Best_ADE=0.196, Best_FDE=0.341 at Epoch 10
+train-0/228 (epoch 12), train_loss = 0.34826, time/batch = 0.07210 
+train-100/228 (epoch 12), train_loss = 0.32402, time/batch = 0.08419 
+train-200/228 (epoch 12), train_loss = 0.35047, time/batch = 0.09282 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.00it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.31it/s] 53%|█████▎    | 9/17 [00:00<00:00, 28.06it/s] 82%|████████▏ | 14/17 [00:00<00:00, 33.78it/s]100%|██████████| 17/17 [00:00<00:00, 31.61it/s]
+----epoch 12, train_loss=0.35835, ADE=0.195, FDE=0.339, Best_ADE=0.195, Best_FDE=0.339 at Epoch 12
+train-0/228 (epoch 13), train_loss = 0.36368, time/batch = 0.07099 
+train-100/228 (epoch 13), train_loss = 0.31858, time/batch = 0.08711 
+train-200/228 (epoch 13), train_loss = 0.36513, time/batch = 0.08723 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.45it/s] 41%|████      | 7/17 [00:00<00:00, 30.49it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.33it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.27it/s]100%|██████████| 17/17 [00:00<00:00, 32.75it/s]
+----epoch 13, train_loss=0.35756, ADE=0.195, FDE=0.347, Best_ADE=0.195, Best_FDE=0.339 at Epoch 12
+train-0/228 (epoch 14), train_loss = 0.36315, time/batch = 0.06785 
+train-100/228 (epoch 14), train_loss = 0.32715, time/batch = 0.08489 
+train-200/228 (epoch 14), train_loss = 0.36952, time/batch = 0.08420 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.65it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.86it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.62it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.92it/s]100%|██████████| 17/17 [00:00<00:00, 33.10it/s]
+----epoch 14, train_loss=0.35930, ADE=0.193, FDE=0.339, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 15), train_loss = 0.34736, time/batch = 0.06907 
+train-100/228 (epoch 15), train_loss = 0.32596, time/batch = 0.08950 
+train-200/228 (epoch 15), train_loss = 0.35304, time/batch = 0.08818 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.28it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.82it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.92it/s]100%|██████████| 17/17 [00:00<00:00, 35.70it/s]100%|██████████| 17/17 [00:00<00:00, 34.37it/s]
+----epoch 15, train_loss=0.35603, ADE=0.195, FDE=0.344, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 16), train_loss = 0.35064, time/batch = 0.06900 
+train-100/228 (epoch 16), train_loss = 0.33050, time/batch = 0.09123 
+train-200/228 (epoch 16), train_loss = 0.35116, time/batch = 0.09748 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.61it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.55it/s] 53%|█████▎    | 9/17 [00:00<00:00, 28.63it/s] 82%|████████▏ | 14/17 [00:00<00:00, 35.16it/s]100%|██████████| 17/17 [00:00<00:00, 32.72it/s]
+----epoch 16, train_loss=0.35600, ADE=0.194, FDE=0.345, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 17), train_loss = 0.33284, time/batch = 0.07235 
+train-100/228 (epoch 17), train_loss = 0.31946, time/batch = 0.08808 
+train-200/228 (epoch 17), train_loss = 0.35401, time/batch = 0.08903 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.81it/s] 41%|████      | 7/17 [00:00<00:00, 30.98it/s] 71%|███████   | 12/17 [00:00<00:00, 35.95it/s] 94%|█████████▍| 16/17 [00:00<00:00, 34.07it/s]100%|██████████| 17/17 [00:00<00:00, 34.17it/s]
+----epoch 17, train_loss=0.35486, ADE=0.195, FDE=0.347, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 18), train_loss = 0.34924, time/batch = 0.07111 
+train-100/228 (epoch 18), train_loss = 0.31783, time/batch = 0.08236 
+train-200/228 (epoch 18), train_loss = 0.35863, time/batch = 0.09106 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.79it/s] 41%|████      | 7/17 [00:00<00:00, 30.51it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.68it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.90it/s]100%|██████████| 17/17 [00:00<00:00, 34.05it/s]
+----epoch 18, train_loss=0.35402, ADE=0.194, FDE=0.340, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 19), train_loss = 0.33432, time/batch = 0.06876 
+train-100/228 (epoch 19), train_loss = 0.32329, time/batch = 0.08620 
+train-200/228 (epoch 19), train_loss = 0.35821, time/batch = 0.08707 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.77it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.75it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.58it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.41it/s]100%|██████████| 17/17 [00:00<00:00, 34.36it/s]
+----epoch 19, train_loss=0.35447, ADE=0.193, FDE=0.341, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 20), train_loss = 0.32475, time/batch = 0.07006 
+train-100/228 (epoch 20), train_loss = 0.33555, time/batch = 0.08199 
+train-200/228 (epoch 20), train_loss = 0.35120, time/batch = 0.08643 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.01it/s] 47%|████▋     | 8/17 [00:00<00:00, 31.08it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.72it/s]100%|██████████| 17/17 [00:00<00:00, 35.12it/s]100%|██████████| 17/17 [00:00<00:00, 34.10it/s]
+----epoch 20, train_loss=0.35354, ADE=0.196, FDE=0.340, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 21), train_loss = 0.34867, time/batch = 0.07292 
+train-100/228 (epoch 21), train_loss = 0.32949, time/batch = 0.08693 
+train-200/228 (epoch 21), train_loss = 0.35794, time/batch = 0.08717 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.66it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.20it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.10it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.22it/s]100%|██████████| 17/17 [00:00<00:00, 32.82it/s]
+----epoch 21, train_loss=0.35339, ADE=0.196, FDE=0.343, Best_ADE=0.193, Best_FDE=0.339 at Epoch 14
+train-0/228 (epoch 22), train_loss = 0.34964, time/batch = 0.07071 
+train-100/228 (epoch 22), train_loss = 0.33178, time/batch = 0.08695 
+train-200/228 (epoch 22), train_loss = 0.34820, time/batch = 0.08867 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.72it/s] 47%|████▋     | 8/17 [00:00<00:00, 29.88it/s] 71%|███████   | 12/17 [00:00<00:00, 33.31it/s] 94%|█████████▍| 16/17 [00:00<00:00, 31.94it/s]100%|██████████| 17/17 [00:00<00:00, 32.20it/s]
+----epoch 22, train_loss=0.35226, ADE=0.193, FDE=0.338, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 23), train_loss = 0.34825, time/batch = 0.07296 
+train-100/228 (epoch 23), train_loss = 0.32549, time/batch = 0.08518 
+train-200/228 (epoch 23), train_loss = 0.37053, time/batch = 0.08758 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.97it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.54it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.89it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.92it/s]100%|██████████| 17/17 [00:00<00:00, 33.45it/s]
+----epoch 23, train_loss=0.35404, ADE=0.195, FDE=0.348, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 24), train_loss = 0.34107, time/batch = 0.06789 
+train-100/228 (epoch 24), train_loss = 0.32349, time/batch = 0.08811 
+train-200/228 (epoch 24), train_loss = 0.37249, time/batch = 0.09591 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.25it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.84it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.09it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.95it/s]100%|██████████| 17/17 [00:00<00:00, 33.80it/s]
+----epoch 24, train_loss=0.36466, ADE=0.194, FDE=0.348, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 25), train_loss = 0.36269, time/batch = 0.07003 
+train-100/228 (epoch 25), train_loss = 0.33261, time/batch = 0.08502 
+train-200/228 (epoch 25), train_loss = 0.36316, time/batch = 0.08798 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.45it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.81it/s] 76%|███████▋  | 13/17 [00:00<00:00, 35.12it/s]100%|██████████| 17/17 [00:00<00:00, 35.39it/s]100%|██████████| 17/17 [00:00<00:00, 34.23it/s]
+----epoch 25, train_loss=0.35699, ADE=0.190, FDE=0.340, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 26), train_loss = 0.33749, time/batch = 0.07290 
+train-100/228 (epoch 26), train_loss = 0.32475, time/batch = 0.08764 
+train-200/228 (epoch 26), train_loss = 0.34492, time/batch = 0.09124 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.73it/s] 41%|████      | 7/17 [00:00<00:00, 30.41it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.99it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.41it/s]100%|██████████| 17/17 [00:00<00:00, 32.79it/s]
+----epoch 26, train_loss=0.35217, ADE=0.194, FDE=0.349, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 27), train_loss = 0.34855, time/batch = 0.06873 
+train-100/228 (epoch 27), train_loss = 0.31933, time/batch = 0.08792 
+train-200/228 (epoch 27), train_loss = 0.34057, time/batch = 0.06920 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.36it/s] 41%|████      | 7/17 [00:00<00:00, 30.73it/s] 71%|███████   | 12/17 [00:00<00:00, 35.72it/s] 94%|█████████▍| 16/17 [00:00<00:00, 34.32it/s]100%|██████████| 17/17 [00:00<00:00, 34.18it/s]
+----epoch 27, train_loss=0.35146, ADE=0.194, FDE=0.341, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 28), train_loss = 0.34957, time/batch = 0.06730 
+train-100/228 (epoch 28), train_loss = 0.32892, time/batch = 0.08904 
+train-200/228 (epoch 28), train_loss = 0.34445, time/batch = 0.08602 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.31it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.84it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.35it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.84it/s]100%|██████████| 17/17 [00:00<00:00, 32.86it/s]
+----epoch 28, train_loss=0.35138, ADE=0.193, FDE=0.342, Best_ADE=0.193, Best_FDE=0.338 at Epoch 22
+train-0/228 (epoch 29), train_loss = 0.34626, time/batch = 0.06824 
+train-100/228 (epoch 29), train_loss = 0.31989, time/batch = 0.08531 
+train-200/228 (epoch 29), train_loss = 0.34305, time/batch = 0.08885 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.21it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.28it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.64it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.99it/s]100%|██████████| 17/17 [00:00<00:00, 32.93it/s]
+----epoch 29, train_loss=0.35015, ADE=0.190, FDE=0.330, Best_ADE=0.190, Best_FDE=0.330 at Epoch 29
+train-0/228 (epoch 30), train_loss = 0.32561, time/batch = 0.07170 
+train-100/228 (epoch 30), train_loss = 0.31679, time/batch = 0.08734 
+train-200/228 (epoch 30), train_loss = 0.35409, time/batch = 0.08914 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.07it/s] 41%|████      | 7/17 [00:00<00:00, 31.02it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.41it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.06it/s]100%|██████████| 17/17 [00:00<00:00, 34.08it/s]
+----epoch 30, train_loss=0.34887, ADE=0.194, FDE=0.346, Best_ADE=0.190, Best_FDE=0.330 at Epoch 29
+train-0/228 (epoch 31), train_loss = 0.33705, time/batch = 0.07362 
+train-100/228 (epoch 31), train_loss = 0.32259, time/batch = 0.08570 
+train-200/228 (epoch 31), train_loss = 0.35113, time/batch = 0.08723 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.31it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.57it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.43it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.62it/s]100%|██████████| 17/17 [00:00<00:00, 34.05it/s]
+----epoch 31, train_loss=0.34903, ADE=0.191, FDE=0.343, Best_ADE=0.190, Best_FDE=0.330 at Epoch 29
+train-0/228 (epoch 32), train_loss = 0.33175, time/batch = 0.06996 
+train-100/228 (epoch 32), train_loss = 0.32179, time/batch = 0.08860 
+train-200/228 (epoch 32), train_loss = 0.35717, time/batch = 0.08851 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.79it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.88it/s] 59%|█████▉    | 10/17 [00:00<00:00, 33.30it/s] 88%|████████▊ | 15/17 [00:00<00:00, 36.54it/s]100%|██████████| 17/17 [00:00<00:00, 34.72it/s]
+----epoch 32, train_loss=0.34848, ADE=0.190, FDE=0.329, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 33), train_loss = 0.34134, time/batch = 0.06993 
+train-100/228 (epoch 33), train_loss = 0.32318, time/batch = 0.08609 
+train-200/228 (epoch 33), train_loss = 0.34784, time/batch = 0.08409 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 28.88it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.29it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.54it/s]100%|██████████| 17/17 [00:00<00:00, 35.40it/s]100%|██████████| 17/17 [00:00<00:00, 34.01it/s]
+----epoch 33, train_loss=0.34850, ADE=0.191, FDE=0.343, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 34), train_loss = 0.34366, time/batch = 0.07369 
+train-100/228 (epoch 34), train_loss = 0.32619, time/batch = 0.08188 
+train-200/228 (epoch 34), train_loss = 0.35687, time/batch = 0.08886 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.75it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.42it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.81it/s] 82%|████████▏ | 14/17 [00:00<00:00, 33.99it/s]100%|██████████| 17/17 [00:00<00:00, 32.79it/s]
+----epoch 34, train_loss=0.34783, ADE=0.191, FDE=0.339, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 35), train_loss = 0.33111, time/batch = 0.06940 
+train-100/228 (epoch 35), train_loss = 0.32594, time/batch = 0.08609 
+train-200/228 (epoch 35), train_loss = 0.35397, time/batch = 0.08928 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.07it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.19it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.15it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.53it/s]100%|██████████| 17/17 [00:00<00:00, 34.23it/s]
+----epoch 35, train_loss=0.34781, ADE=0.195, FDE=0.349, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 36), train_loss = 0.32907, time/batch = 0.06914 
+train-100/228 (epoch 36), train_loss = 0.30814, time/batch = 0.09099 
+train-200/228 (epoch 36), train_loss = 0.34024, time/batch = 0.08976 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.98it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.31it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.55it/s] 82%|████████▏ | 14/17 [00:00<00:00, 36.24it/s]100%|██████████| 17/17 [00:00<00:00, 33.88it/s]
+----epoch 36, train_loss=0.34676, ADE=0.190, FDE=0.334, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 37), train_loss = 0.36188, time/batch = 0.07299 
+train-100/228 (epoch 37), train_loss = 0.32051, time/batch = 0.08429 
+train-200/228 (epoch 37), train_loss = 0.34895, time/batch = 0.08904 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.59it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.40it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.86it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.11it/s]100%|██████████| 17/17 [00:00<00:00, 34.15it/s]
+----epoch 37, train_loss=0.34640, ADE=0.188, FDE=0.331, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 38), train_loss = 0.33566, time/batch = 0.07110 
+train-100/228 (epoch 38), train_loss = 0.31408, time/batch = 0.09014 
+train-200/228 (epoch 38), train_loss = 0.34952, time/batch = 0.08715 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.11it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.38it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.00it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.08it/s]100%|██████████| 17/17 [00:00<00:00, 33.74it/s]
+----epoch 38, train_loss=0.34720, ADE=0.188, FDE=0.336, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 39), train_loss = 0.33551, time/batch = 0.06858 
+train-100/228 (epoch 39), train_loss = 0.30980, time/batch = 0.08258 
+train-200/228 (epoch 39), train_loss = 0.36205, time/batch = 0.09249 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.74it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.88it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.64it/s]100%|██████████| 17/17 [00:00<00:00, 35.59it/s]100%|██████████| 17/17 [00:00<00:00, 34.40it/s]
+----epoch 39, train_loss=0.34669, ADE=0.190, FDE=0.341, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 40), train_loss = 0.34021, time/batch = 0.09337 
+train-100/228 (epoch 40), train_loss = 0.32253, time/batch = 0.08383 
+train-200/228 (epoch 40), train_loss = 0.36595, time/batch = 0.09248 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.01it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.06it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.53it/s]100%|██████████| 17/17 [00:00<00:00, 34.35it/s]100%|██████████| 17/17 [00:00<00:00, 33.29it/s]
+----epoch 40, train_loss=0.35090, ADE=0.190, FDE=0.339, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 41), train_loss = 0.34496, time/batch = 0.07066 
+train-100/228 (epoch 41), train_loss = 0.32129, time/batch = 0.08931 
+train-200/228 (epoch 41), train_loss = 0.36240, time/batch = 0.08887 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.95it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.78it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.33it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.39it/s]100%|██████████| 17/17 [00:00<00:00, 33.52it/s]
+----epoch 41, train_loss=0.35090, ADE=0.189, FDE=0.338, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 42), train_loss = 0.32925, time/batch = 0.06804 
+train-100/228 (epoch 42), train_loss = 0.33124, time/batch = 0.08361 
+train-200/228 (epoch 42), train_loss = 0.34774, time/batch = 0.09089 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.27it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.92it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.80it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.14it/s]100%|██████████| 17/17 [00:00<00:00, 32.40it/s]
+----epoch 42, train_loss=0.34899, ADE=0.191, FDE=0.339, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 43), train_loss = 0.33148, time/batch = 0.07418 
+train-100/228 (epoch 43), train_loss = 0.32466, time/batch = 0.08522 
+train-200/228 (epoch 43), train_loss = 0.34748, time/batch = 0.08923 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.91it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.28it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.92it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.23it/s]100%|██████████| 17/17 [00:00<00:00, 33.04it/s]
+----epoch 43, train_loss=0.34657, ADE=0.193, FDE=0.339, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 44), train_loss = 0.33947, time/batch = 0.07151 
+train-100/228 (epoch 44), train_loss = 0.31333, time/batch = 0.08368 
+train-200/228 (epoch 44), train_loss = 0.35969, time/batch = 0.09155 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.00it/s] 41%|████      | 7/17 [00:00<00:00, 30.52it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.94it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.18it/s]100%|██████████| 17/17 [00:00<00:00, 33.82it/s]
+----epoch 44, train_loss=0.34535, ADE=0.189, FDE=0.342, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 45), train_loss = 0.34574, time/batch = 0.07313 
+train-100/228 (epoch 45), train_loss = 0.31782, time/batch = 0.08607 
+train-200/228 (epoch 45), train_loss = 0.33755, time/batch = 0.08554 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.89it/s] 47%|████▋     | 8/17 [00:00<00:00, 29.93it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.18it/s]100%|██████████| 17/17 [00:00<00:00, 33.54it/s]100%|██████████| 17/17 [00:00<00:00, 32.70it/s]
+----epoch 45, train_loss=0.34582, ADE=0.190, FDE=0.336, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 46), train_loss = 0.34975, time/batch = 0.07056 
+train-100/228 (epoch 46), train_loss = 0.31432, time/batch = 0.08841 
+train-200/228 (epoch 46), train_loss = 0.35816, time/batch = 0.09261 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.19it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.20it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.80it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.29it/s]100%|██████████| 17/17 [00:00<00:00, 32.60it/s]
+----epoch 46, train_loss=0.34578, ADE=0.193, FDE=0.346, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 47), train_loss = 0.34255, time/batch = 0.07160 
+train-100/228 (epoch 47), train_loss = 0.33062, time/batch = 0.08863 
+train-200/228 (epoch 47), train_loss = 0.35129, time/batch = 0.08751 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.79it/s] 41%|████      | 7/17 [00:00<00:00, 29.29it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.34it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.31it/s]100%|██████████| 17/17 [00:00<00:00, 32.95it/s]
+----epoch 47, train_loss=0.34551, ADE=0.188, FDE=0.332, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 48), train_loss = 0.35367, time/batch = 0.07065 
+train-100/228 (epoch 48), train_loss = 0.31369, time/batch = 0.08743 
+train-200/228 (epoch 48), train_loss = 0.34374, time/batch = 0.08652 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.31it/s] 41%|████      | 7/17 [00:00<00:00, 31.34it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.03it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.60it/s]100%|██████████| 17/17 [00:00<00:00, 33.73it/s]
+----epoch 48, train_loss=0.34325, ADE=0.188, FDE=0.335, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 49), train_loss = 0.33265, time/batch = 0.07181 
+train-100/228 (epoch 49), train_loss = 0.33113, time/batch = 0.08843 
+train-200/228 (epoch 49), train_loss = 0.34616, time/batch = 0.08488 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.08it/s] 41%|████      | 7/17 [00:00<00:00, 30.64it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.50it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.44it/s]100%|██████████| 17/17 [00:00<00:00, 33.95it/s]
+----epoch 49, train_loss=0.34402, ADE=0.188, FDE=0.336, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 50), train_loss = 0.32825, time/batch = 0.07169 
+train-100/228 (epoch 50), train_loss = 0.31024, time/batch = 0.08431 
+train-200/228 (epoch 50), train_loss = 0.34656, time/batch = 0.08877 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.89it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.92it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.22it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.38it/s]100%|██████████| 17/17 [00:00<00:00, 32.80it/s]
+----epoch 50, train_loss=0.34296, ADE=0.188, FDE=0.333, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 51), train_loss = 0.32972, time/batch = 0.06844 
+train-100/228 (epoch 51), train_loss = 0.32066, time/batch = 0.08553 
+train-200/228 (epoch 51), train_loss = 0.34166, time/batch = 0.08978 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.91it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.30it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.53it/s] 82%|████████▏ | 14/17 [00:00<00:00, 36.64it/s]100%|██████████| 17/17 [00:00<00:00, 33.86it/s]
+----epoch 51, train_loss=0.34254, ADE=0.191, FDE=0.339, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 52), train_loss = 0.33172, time/batch = 0.06582 
+train-100/228 (epoch 52), train_loss = 0.31974, time/batch = 0.09284 
+train-200/228 (epoch 52), train_loss = 0.35017, time/batch = 0.09270 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.10it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.74it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.09it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.31it/s]100%|██████████| 17/17 [00:00<00:00, 32.67it/s]
+----epoch 52, train_loss=0.34273, ADE=0.187, FDE=0.332, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 53), train_loss = 0.32607, time/batch = 0.07420 
+train-100/228 (epoch 53), train_loss = 0.31897, time/batch = 0.06795 
+train-200/228 (epoch 53), train_loss = 0.34027, time/batch = 0.09705 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.40it/s] 41%|████      | 7/17 [00:00<00:00, 29.92it/s] 71%|███████   | 12/17 [00:00<00:00, 35.25it/s] 94%|█████████▍| 16/17 [00:00<00:00, 33.70it/s]100%|██████████| 17/17 [00:00<00:00, 33.63it/s]
+----epoch 53, train_loss=0.34333, ADE=0.191, FDE=0.338, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 54), train_loss = 0.33371, time/batch = 0.08013 
+train-100/228 (epoch 54), train_loss = 0.30230, time/batch = 0.08938 
+train-200/228 (epoch 54), train_loss = 0.34947, time/batch = 0.08588 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.58it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.24it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.41it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.35it/s]100%|██████████| 17/17 [00:00<00:00, 33.52it/s]
+----epoch 54, train_loss=0.34387, ADE=0.191, FDE=0.341, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 55), train_loss = 0.32752, time/batch = 0.06698 
+train-100/228 (epoch 55), train_loss = 0.32182, time/batch = 0.08927 
+train-200/228 (epoch 55), train_loss = 0.34536, time/batch = 0.08625 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.34it/s] 41%|████      | 7/17 [00:00<00:00, 31.27it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.01it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.33it/s]100%|██████████| 17/17 [00:00<00:00, 33.69it/s]
+----epoch 55, train_loss=0.34241, ADE=0.188, FDE=0.337, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 56), train_loss = 0.31818, time/batch = 0.06971 
+train-100/228 (epoch 56), train_loss = 0.31765, time/batch = 0.08269 
+train-200/228 (epoch 56), train_loss = 0.33848, time/batch = 0.08784 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.42it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.89it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.84it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.74it/s]100%|██████████| 17/17 [00:00<00:00, 33.29it/s]
+----epoch 56, train_loss=0.34189, ADE=0.188, FDE=0.329, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 57), train_loss = 0.33089, time/batch = 0.07164 
+train-100/228 (epoch 57), train_loss = 0.31540, time/batch = 0.08984 
+train-200/228 (epoch 57), train_loss = 0.34210, time/batch = 0.10136 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.48it/s] 41%|████      | 7/17 [00:00<00:00, 31.41it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.90it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.12it/s]100%|██████████| 17/17 [00:00<00:00, 33.41it/s]
+----epoch 57, train_loss=0.34207, ADE=0.189, FDE=0.336, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 58), train_loss = 0.31524, time/batch = 0.06905 
+train-100/228 (epoch 58), train_loss = 0.32257, time/batch = 0.08322 
+train-200/228 (epoch 58), train_loss = 0.34001, time/batch = 0.08490 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.71it/s] 41%|████      | 7/17 [00:00<00:00, 30.54it/s] 65%|██████▍   | 11/17 [00:00<00:00, 30.66it/s] 88%|████████▊ | 15/17 [00:00<00:00, 30.92it/s]100%|██████████| 17/17 [00:00<00:00, 31.01it/s]
+----epoch 58, train_loss=0.34183, ADE=0.187, FDE=0.337, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 59), train_loss = 0.32098, time/batch = 0.06851 
+train-100/228 (epoch 59), train_loss = 0.31053, time/batch = 0.08440 
+train-200/228 (epoch 59), train_loss = 0.33603, time/batch = 0.09281 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.27it/s] 47%|████▋     | 8/17 [00:00<00:00, 29.87it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.38it/s]100%|██████████| 17/17 [00:00<00:00, 33.61it/s]100%|██████████| 17/17 [00:00<00:00, 32.97it/s]
+----epoch 59, train_loss=0.34168, ADE=0.191, FDE=0.338, Best_ADE=0.190, Best_FDE=0.329 at Epoch 32
+train-0/228 (epoch 60), train_loss = 0.31848, time/batch = 0.07101 
+train-100/228 (epoch 60), train_loss = 0.32279, time/batch = 0.09020 
+train-200/228 (epoch 60), train_loss = 0.34363, time/batch = 0.08723 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.90it/s] 47%|████▋     | 8/17 [00:00<00:00, 31.35it/s] 76%|███████▋  | 13/17 [00:00<00:00, 35.71it/s]100%|██████████| 17/17 [00:00<00:00, 36.07it/s]100%|██████████| 17/17 [00:00<00:00, 34.86it/s]
+----epoch 60, train_loss=0.34130, ADE=0.187, FDE=0.327, Best_ADE=0.187, Best_FDE=0.327 at Epoch 60
+train-0/228 (epoch 61), train_loss = 0.31304, time/batch = 0.07415 
+train-100/228 (epoch 61), train_loss = 0.32072, time/batch = 0.08729 
+train-200/228 (epoch 61), train_loss = 0.32479, time/batch = 0.08758 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.37it/s] 41%|████      | 7/17 [00:00<00:00, 30.55it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.37it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.01it/s]100%|██████████| 17/17 [00:00<00:00, 33.45it/s]
+----epoch 61, train_loss=0.34125, ADE=0.187, FDE=0.331, Best_ADE=0.187, Best_FDE=0.327 at Epoch 60
+train-0/228 (epoch 62), train_loss = 0.34070, time/batch = 0.06747 
+train-100/228 (epoch 62), train_loss = 0.30657, time/batch = 0.08628 
+train-200/228 (epoch 62), train_loss = 0.34718, time/batch = 0.09281 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.88it/s] 41%|████      | 7/17 [00:00<00:00, 30.52it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.71it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.38it/s]100%|██████████| 17/17 [00:00<00:00, 32.87it/s]
+----epoch 62, train_loss=0.34218, ADE=0.184, FDE=0.332, Best_ADE=0.187, Best_FDE=0.327 at Epoch 60
+train-0/228 (epoch 63), train_loss = 0.33198, time/batch = 0.07255 
+train-100/228 (epoch 63), train_loss = 0.30721, time/batch = 0.08986 
+train-200/228 (epoch 63), train_loss = 0.34492, time/batch = 0.08503 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.78it/s] 41%|████      | 7/17 [00:00<00:00, 31.81it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.58it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.63it/s]100%|██████████| 17/17 [00:00<00:00, 34.21it/s]
+----epoch 63, train_loss=0.34051, ADE=0.186, FDE=0.330, Best_ADE=0.187, Best_FDE=0.327 at Epoch 60
+train-0/228 (epoch 64), train_loss = 0.33207, time/batch = 0.06986 
+train-100/228 (epoch 64), train_loss = 0.31466, time/batch = 0.08474 
+train-200/228 (epoch 64), train_loss = 0.33614, time/batch = 0.08873 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.15it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.89it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.78it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.67it/s]100%|██████████| 17/17 [00:00<00:00, 33.12it/s]
+----epoch 64, train_loss=0.33916, ADE=0.185, FDE=0.331, Best_ADE=0.187, Best_FDE=0.327 at Epoch 60
+train-0/228 (epoch 65), train_loss = 0.31247, time/batch = 0.07346 
+train-100/228 (epoch 65), train_loss = 0.30060, time/batch = 0.08140 
+train-200/228 (epoch 65), train_loss = 0.34366, time/batch = 0.09586 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.96it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.97it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.37it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.23it/s]100%|██████████| 17/17 [00:00<00:00, 32.00it/s]100%|██████████| 17/17 [00:00<00:00, 31.43it/s]
+----epoch 65, train_loss=0.33921, ADE=0.187, FDE=0.336, Best_ADE=0.187, Best_FDE=0.327 at Epoch 60
+train-0/228 (epoch 66), train_loss = 0.32456, time/batch = 0.06974 
+train-100/228 (epoch 66), train_loss = 0.30799, time/batch = 0.08733 
+train-200/228 (epoch 66), train_loss = 0.35118, time/batch = 0.08661 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.60it/s] 41%|████      | 7/17 [00:00<00:00, 30.90it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.27it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.06it/s]100%|██████████| 17/17 [00:00<00:00, 33.52it/s]
+----epoch 66, train_loss=0.34205, ADE=0.185, FDE=0.327, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 67), train_loss = 0.33986, time/batch = 0.07259 
+train-100/228 (epoch 67), train_loss = 0.31093, time/batch = 0.08400 
+train-200/228 (epoch 67), train_loss = 0.34053, time/batch = 0.08937 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.87it/s] 41%|████      | 7/17 [00:00<00:00, 30.75it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.61it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.78it/s]100%|██████████| 17/17 [00:00<00:00, 33.91it/s]
+----epoch 67, train_loss=0.33891, ADE=0.184, FDE=0.331, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 68), train_loss = 0.32529, time/batch = 0.06889 
+train-100/228 (epoch 68), train_loss = 0.30710, time/batch = 0.08812 
+train-200/228 (epoch 68), train_loss = 0.34357, time/batch = 0.12633 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.01it/s] 41%|████      | 7/17 [00:00<00:00, 29.10it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.69it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.39it/s]100%|██████████| 17/17 [00:00<00:00, 33.04it/s]
+----epoch 68, train_loss=0.33964, ADE=0.185, FDE=0.329, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 69), train_loss = 0.32732, time/batch = 0.07180 
+train-100/228 (epoch 69), train_loss = 0.32085, time/batch = 0.08617 
+train-200/228 (epoch 69), train_loss = 0.33910, time/batch = 0.08682 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.12it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.99it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.52it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.26it/s]100%|██████████| 17/17 [00:00<00:00, 32.97it/s]
+----epoch 69, train_loss=0.33975, ADE=0.187, FDE=0.341, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 70), train_loss = 0.33984, time/batch = 0.07308 
+train-100/228 (epoch 70), train_loss = 0.30736, time/batch = 0.08621 
+train-200/228 (epoch 70), train_loss = 0.34215, time/batch = 0.08819 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.36it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.49it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.29it/s]100%|██████████| 17/17 [00:00<00:00, 35.39it/s]100%|██████████| 17/17 [00:00<00:00, 34.03it/s]
+----epoch 70, train_loss=0.33843, ADE=0.185, FDE=0.328, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 71), train_loss = 0.34619, time/batch = 0.05445 
+train-100/228 (epoch 71), train_loss = 0.30572, time/batch = 0.08451 
+train-200/228 (epoch 71), train_loss = 0.33251, time/batch = 0.08276 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.25it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.80it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.36it/s]100%|██████████| 17/17 [00:00<00:00, 34.97it/s]100%|██████████| 17/17 [00:00<00:00, 33.84it/s]
+----epoch 71, train_loss=0.34074, ADE=0.186, FDE=0.336, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 72), train_loss = 0.32074, time/batch = 0.05607 
+train-100/228 (epoch 72), train_loss = 0.30175, time/batch = 0.10635 
+train-200/228 (epoch 72), train_loss = 0.34127, time/batch = 0.09244 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.36it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.43it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.35it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.19it/s]100%|██████████| 17/17 [00:00<00:00, 32.42it/s]
+----epoch 72, train_loss=0.34077, ADE=0.190, FDE=0.337, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 73), train_loss = 0.33731, time/batch = 0.07211 
+train-100/228 (epoch 73), train_loss = 0.30472, time/batch = 0.08741 
+train-200/228 (epoch 73), train_loss = 0.33431, time/batch = 0.08921 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.29it/s] 41%|████      | 7/17 [00:00<00:00, 30.08it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.95it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.40it/s]100%|██████████| 17/17 [00:00<00:00, 33.53it/s]
+----epoch 73, train_loss=0.33931, ADE=0.187, FDE=0.337, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 74), train_loss = 0.33012, time/batch = 0.06835 
+train-100/228 (epoch 74), train_loss = 0.31374, time/batch = 0.08351 
+train-200/228 (epoch 74), train_loss = 0.34332, time/batch = 0.08948 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 31.68it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.77it/s] 76%|███████▋  | 13/17 [00:00<00:00, 35.25it/s]100%|██████████| 17/17 [00:00<00:00, 35.68it/s]100%|██████████| 17/17 [00:00<00:00, 34.62it/s]
+----epoch 74, train_loss=0.33865, ADE=0.187, FDE=0.337, Best_ADE=0.185, Best_FDE=0.327 at Epoch 66
+train-0/228 (epoch 75), train_loss = 0.33825, time/batch = 0.07173 
+train-100/228 (epoch 75), train_loss = 0.30831, time/batch = 0.08474 
+train-200/228 (epoch 75), train_loss = 0.34696, time/batch = 0.09470 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.72it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.41it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.91it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.13it/s]100%|██████████| 17/17 [00:00<00:00, 33.65it/s]
+----epoch 75, train_loss=0.33988, ADE=0.182, FDE=0.325, Best_ADE=0.182, Best_FDE=0.325 at Epoch 75
+train-0/228 (epoch 76), train_loss = 0.32859, time/batch = 0.06722 
+train-100/228 (epoch 76), train_loss = 0.31717, time/batch = 0.08765 
+train-200/228 (epoch 76), train_loss = 0.33326, time/batch = 0.10075 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.40it/s] 41%|████      | 7/17 [00:00<00:00, 31.16it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.65it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.73it/s]100%|██████████| 17/17 [00:00<00:00, 34.17it/s]
+----epoch 76, train_loss=0.33790, ADE=0.186, FDE=0.334, Best_ADE=0.182, Best_FDE=0.325 at Epoch 75
+train-0/228 (epoch 77), train_loss = 0.34104, time/batch = 0.06863 
+train-100/228 (epoch 77), train_loss = 0.30933, time/batch = 0.08430 
+train-200/228 (epoch 77), train_loss = 0.33867, time/batch = 0.08761 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.45it/s] 41%|████      | 7/17 [00:00<00:00, 30.76it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.66it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.25it/s]100%|██████████| 17/17 [00:00<00:00, 32.73it/s]
+----epoch 77, train_loss=0.33900, ADE=0.181, FDE=0.327, Best_ADE=0.182, Best_FDE=0.325 at Epoch 75
+train-0/228 (epoch 78), train_loss = 0.33754, time/batch = 0.08004 
+train-100/228 (epoch 78), train_loss = 0.28795, time/batch = 0.08232 
+train-200/228 (epoch 78), train_loss = 0.34308, time/batch = 0.08686 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.84it/s] 41%|████      | 7/17 [00:00<00:00, 31.29it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.65it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.27it/s]100%|██████████| 17/17 [00:00<00:00, 33.51it/s]
+----epoch 78, train_loss=0.33971, ADE=0.184, FDE=0.325, Best_ADE=0.182, Best_FDE=0.325 at Epoch 75
+train-0/228 (epoch 79), train_loss = 0.31589, time/batch = 0.06800 
+train-100/228 (epoch 79), train_loss = 0.30828, time/batch = 0.08445 
+train-200/228 (epoch 79), train_loss = 0.34810, time/batch = 0.09371 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.69it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.31it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.30it/s]100%|██████████| 17/17 [00:00<00:00, 33.67it/s]100%|██████████| 17/17 [00:00<00:00, 33.09it/s]
+----epoch 79, train_loss=0.33791, ADE=0.184, FDE=0.323, Best_ADE=0.184, Best_FDE=0.323 at Epoch 79
+train-0/228 (epoch 80), train_loss = 0.31697, time/batch = 0.07136 
+train-100/228 (epoch 80), train_loss = 0.32676, time/batch = 0.08584 
+train-200/228 (epoch 80), train_loss = 0.33783, time/batch = 0.08726 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.83it/s] 41%|████      | 7/17 [00:00<00:00, 30.68it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.56it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.39it/s]100%|██████████| 17/17 [00:00<00:00, 33.47it/s]
+----epoch 80, train_loss=0.33972, ADE=0.187, FDE=0.338, Best_ADE=0.184, Best_FDE=0.323 at Epoch 79
+train-0/228 (epoch 81), train_loss = 0.32059, time/batch = 0.07004 
+train-100/228 (epoch 81), train_loss = 0.29828, time/batch = 0.08114 
+train-200/228 (epoch 81), train_loss = 0.33604, time/batch = 0.08782 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.95it/s] 41%|████      | 7/17 [00:00<00:00, 30.29it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.94it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.26it/s]100%|██████████| 17/17 [00:00<00:00, 33.89it/s]
+----epoch 81, train_loss=0.33909, ADE=0.182, FDE=0.324, Best_ADE=0.184, Best_FDE=0.323 at Epoch 79
+train-0/228 (epoch 82), train_loss = 0.32651, time/batch = 0.06914 
+train-100/228 (epoch 82), train_loss = 0.31274, time/batch = 0.09099 
+train-200/228 (epoch 82), train_loss = 0.33121, time/batch = 0.09043 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.77it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.00it/s] 53%|█████▎    | 9/17 [00:00<00:00, 28.91it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.63it/s]100%|██████████| 17/17 [00:00<00:00, 32.63it/s]
+----epoch 82, train_loss=0.33713, ADE=0.183, FDE=0.322, Best_ADE=0.183, Best_FDE=0.322 at Epoch 82
+train-0/228 (epoch 83), train_loss = 0.33609, time/batch = 0.06900 
+train-100/228 (epoch 83), train_loss = 0.30949, time/batch = 0.08870 
+train-200/228 (epoch 83), train_loss = 0.35128, time/batch = 0.08723 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.88it/s] 41%|████      | 7/17 [00:00<00:00, 31.26it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.14it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.95it/s]100%|██████████| 17/17 [00:00<00:00, 33.79it/s]
+----epoch 83, train_loss=0.33795, ADE=0.185, FDE=0.333, Best_ADE=0.183, Best_FDE=0.322 at Epoch 82
+train-0/228 (epoch 84), train_loss = 0.33948, time/batch = 0.06545 
+train-100/228 (epoch 84), train_loss = 0.30459, time/batch = 0.08380 
+train-200/228 (epoch 84), train_loss = 0.32552, time/batch = 0.08614 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.93it/s] 41%|████      | 7/17 [00:00<00:00, 30.46it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.88it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.63it/s]100%|██████████| 17/17 [00:00<00:00, 33.91it/s]
+----epoch 84, train_loss=0.34092, ADE=0.181, FDE=0.319, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 85), train_loss = 0.32548, time/batch = 0.07478 
+train-100/228 (epoch 85), train_loss = 0.30536, time/batch = 0.08482 
+train-200/228 (epoch 85), train_loss = 0.32987, time/batch = 0.08526 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.36it/s] 41%|████      | 7/17 [00:00<00:00, 30.15it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.47it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.31it/s]100%|██████████| 17/17 [00:00<00:00, 32.56it/s]
+----epoch 85, train_loss=0.33737, ADE=0.182, FDE=0.324, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 86), train_loss = 0.32418, time/batch = 0.07056 
+train-100/228 (epoch 86), train_loss = 0.29898, time/batch = 0.08555 
+train-200/228 (epoch 86), train_loss = 0.33361, time/batch = 0.08739 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.04it/s] 41%|████      | 7/17 [00:00<00:00, 30.83it/s] 71%|███████   | 12/17 [00:00<00:00, 35.76it/s] 94%|█████████▍| 16/17 [00:00<00:00, 34.07it/s]100%|██████████| 17/17 [00:00<00:00, 34.11it/s]
+----epoch 86, train_loss=0.33580, ADE=0.182, FDE=0.322, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 87), train_loss = 0.33534, time/batch = 0.07012 
+train-100/228 (epoch 87), train_loss = 0.29997, time/batch = 0.08074 
+train-200/228 (epoch 87), train_loss = 0.32752, time/batch = 0.08836 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.58it/s] 47%|████▋     | 8/17 [00:00<00:00, 31.10it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.86it/s]100%|██████████| 17/17 [00:00<00:00, 35.38it/s]100%|██████████| 17/17 [00:00<00:00, 34.33it/s]
+----epoch 87, train_loss=0.33645, ADE=0.184, FDE=0.330, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 88), train_loss = 0.31600, time/batch = 0.07494 
+train-100/228 (epoch 88), train_loss = 0.31518, time/batch = 0.08486 
+train-200/228 (epoch 88), train_loss = 0.34116, time/batch = 0.08983 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.38it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.62it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.84it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.64it/s]100%|██████████| 17/17 [00:00<00:00, 34.36it/s]
+----epoch 88, train_loss=0.33530, ADE=0.184, FDE=0.325, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 89), train_loss = 0.33735, time/batch = 0.06970 
+train-100/228 (epoch 89), train_loss = 0.29198, time/batch = 0.08978 
+train-200/228 (epoch 89), train_loss = 0.35482, time/batch = 0.08868 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.89it/s] 41%|████      | 7/17 [00:00<00:00, 31.20it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.23it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.97it/s]100%|██████████| 17/17 [00:00<00:00, 34.33it/s]
+----epoch 89, train_loss=0.33563, ADE=0.184, FDE=0.331, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 90), train_loss = 0.30600, time/batch = 0.06994 
+train-100/228 (epoch 90), train_loss = 0.32030, time/batch = 0.08584 
+train-200/228 (epoch 90), train_loss = 0.34034, time/batch = 0.08080 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.44it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.44it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.69it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.50it/s]100%|██████████| 17/17 [00:00<00:00, 33.28it/s]
+----epoch 90, train_loss=0.33651, ADE=0.184, FDE=0.329, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 91), train_loss = 0.33188, time/batch = 0.06968 
+train-100/228 (epoch 91), train_loss = 0.30185, time/batch = 0.08345 
+train-200/228 (epoch 91), train_loss = 0.33538, time/batch = 0.08622 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.01it/s] 47%|████▋     | 8/17 [00:00<00:00, 31.22it/s] 76%|███████▋  | 13/17 [00:00<00:00, 35.02it/s]100%|██████████| 17/17 [00:00<00:00, 36.14it/s]100%|██████████| 17/17 [00:00<00:00, 34.78it/s]
+----epoch 91, train_loss=0.33864, ADE=0.185, FDE=0.332, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 92), train_loss = 0.31887, time/batch = 0.06933 
+train-100/228 (epoch 92), train_loss = 0.30815, time/batch = 0.08609 
+train-200/228 (epoch 92), train_loss = 0.33920, time/batch = 0.09591 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.96it/s] 41%|████      | 7/17 [00:00<00:00, 32.28it/s] 65%|██████▍   | 11/17 [00:00<00:00, 35.14it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.28it/s]100%|██████████| 17/17 [00:00<00:00, 35.16it/s]
+----epoch 92, train_loss=0.33698, ADE=0.185, FDE=0.331, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 93), train_loss = 0.31430, time/batch = 0.07003 
+train-100/228 (epoch 93), train_loss = 0.31609, time/batch = 0.08460 
+train-200/228 (epoch 93), train_loss = 0.33304, time/batch = 0.08632 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.32it/s] 41%|████      | 7/17 [00:00<00:00, 30.75it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.46it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.01it/s]100%|██████████| 17/17 [00:00<00:00, 33.85it/s]
+----epoch 93, train_loss=0.33685, ADE=0.185, FDE=0.330, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 94), train_loss = 0.31300, time/batch = 0.06629 
+train-100/228 (epoch 94), train_loss = 0.29859, time/batch = 0.08846 
+train-200/228 (epoch 94), train_loss = 0.33058, time/batch = 0.08826 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.32it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.70it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.53it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.50it/s]100%|██████████| 17/17 [00:00<00:00, 33.53it/s]
+----epoch 94, train_loss=0.33586, ADE=0.183, FDE=0.330, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 95), train_loss = 0.31823, time/batch = 0.07070 
+train-100/228 (epoch 95), train_loss = 0.30183, time/batch = 0.08615 
+train-200/228 (epoch 95), train_loss = 0.32568, time/batch = 0.08565 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.09it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.84it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.84it/s]100%|██████████| 17/17 [00:00<00:00, 36.37it/s]100%|██████████| 17/17 [00:00<00:00, 34.83it/s]
+----epoch 95, train_loss=0.33485, ADE=0.183, FDE=0.324, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 96), train_loss = 0.32505, time/batch = 0.06819 
+train-100/228 (epoch 96), train_loss = 0.29874, time/batch = 0.08704 
+train-200/228 (epoch 96), train_loss = 0.35230, time/batch = 0.08445 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.88it/s] 41%|████      | 7/17 [00:00<00:00, 30.69it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.68it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.87it/s]100%|██████████| 17/17 [00:00<00:00, 33.42it/s]
+----epoch 96, train_loss=0.33465, ADE=0.181, FDE=0.330, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 97), train_loss = 0.31192, time/batch = 0.07385 
+train-100/228 (epoch 97), train_loss = 0.30617, time/batch = 0.08934 
+train-200/228 (epoch 97), train_loss = 0.33778, time/batch = 0.09096 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.40it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.98it/s] 76%|███████▋  | 13/17 [00:00<00:00, 35.10it/s]100%|██████████| 17/17 [00:00<00:00, 36.11it/s]100%|██████████| 17/17 [00:00<00:00, 34.68it/s]
+----epoch 97, train_loss=0.33402, ADE=0.182, FDE=0.326, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 98), train_loss = 0.32379, time/batch = 0.07620 
+train-100/228 (epoch 98), train_loss = 0.30261, time/batch = 0.09087 
+train-200/228 (epoch 98), train_loss = 0.33593, time/batch = 0.08842 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.19it/s] 41%|████      | 7/17 [00:00<00:00, 30.52it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.24it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.49it/s]100%|██████████| 17/17 [00:00<00:00, 33.72it/s]
+----epoch 98, train_loss=0.33401, ADE=0.187, FDE=0.334, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 99), train_loss = 0.31930, time/batch = 0.06891 
+train-100/228 (epoch 99), train_loss = 0.29913, time/batch = 0.08796 
+train-200/228 (epoch 99), train_loss = 0.32263, time/batch = 0.08825 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 26.93it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.21it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.74it/s] 82%|████████▏ | 14/17 [00:00<00:00, 33.75it/s]100%|██████████| 17/17 [00:00<00:00, 32.12it/s]
+----epoch 99, train_loss=0.33350, ADE=0.183, FDE=0.326, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 100), train_loss = 0.32051, time/batch = 0.07037 
+train-100/228 (epoch 100), train_loss = 0.30577, time/batch = 0.08579 
+train-200/228 (epoch 100), train_loss = 0.33585, time/batch = 0.08639 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.67it/s] 41%|████      | 7/17 [00:00<00:00, 30.41it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.30it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.41it/s]100%|██████████| 17/17 [00:00<00:00, 34.05it/s]
+----epoch 100, train_loss=0.33274, ADE=0.185, FDE=0.330, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 101), train_loss = 0.33132, time/batch = 0.06726 
+train-100/228 (epoch 101), train_loss = 0.29965, time/batch = 0.08991 
+train-200/228 (epoch 101), train_loss = 0.32193, time/batch = 0.08995 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.24it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.40it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.98it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.35it/s]100%|██████████| 17/17 [00:00<00:00, 33.83it/s]
+----epoch 101, train_loss=0.33493, ADE=0.183, FDE=0.324, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 102), train_loss = 0.32359, time/batch = 0.07031 
+train-100/228 (epoch 102), train_loss = 0.29356, time/batch = 0.08477 
+train-200/228 (epoch 102), train_loss = 0.32835, time/batch = 0.08753 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.98it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.82it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.15it/s]100%|██████████| 17/17 [00:00<00:00, 34.88it/s]100%|██████████| 17/17 [00:00<00:00, 33.81it/s]
+----epoch 102, train_loss=0.33345, ADE=0.182, FDE=0.322, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 103), train_loss = 0.30574, time/batch = 0.07013 
+train-100/228 (epoch 103), train_loss = 0.29762, time/batch = 0.08813 
+train-200/228 (epoch 103), train_loss = 0.32279, time/batch = 0.08839 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 31.21it/s] 47%|████▋     | 8/17 [00:00<00:00, 32.86it/s] 76%|███████▋  | 13/17 [00:00<00:00, 36.61it/s]100%|██████████| 17/17 [00:00<00:00, 35.99it/s]100%|██████████| 17/17 [00:00<00:00, 35.29it/s]
+----epoch 103, train_loss=0.33210, ADE=0.186, FDE=0.332, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 104), train_loss = 0.33322, time/batch = 0.07324 
+train-100/228 (epoch 104), train_loss = 0.29832, time/batch = 0.08586 
+train-200/228 (epoch 104), train_loss = 0.32794, time/batch = 0.08957 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.80it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.73it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.31it/s] 82%|████████▏ | 14/17 [00:00<00:00, 35.35it/s]100%|██████████| 17/17 [00:00<00:00, 33.16it/s]
+----epoch 104, train_loss=0.33304, ADE=0.184, FDE=0.328, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 105), train_loss = 0.32616, time/batch = 0.07348 
+train-100/228 (epoch 105), train_loss = 0.29951, time/batch = 0.08920 
+train-200/228 (epoch 105), train_loss = 0.33289, time/batch = 0.08753 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.90it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.11it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.73it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.61it/s]100%|██████████| 17/17 [00:00<00:00, 33.83it/s]
+----epoch 105, train_loss=0.33285, ADE=0.182, FDE=0.326, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 106), train_loss = 0.31565, time/batch = 0.06688 
+train-100/228 (epoch 106), train_loss = 0.31191, time/batch = 0.08730 
+train-200/228 (epoch 106), train_loss = 0.33518, time/batch = 0.08709 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 30.00it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.60it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.51it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.07it/s]100%|██████████| 17/17 [00:00<00:00, 33.78it/s]
+----epoch 106, train_loss=0.33219, ADE=0.182, FDE=0.323, Best_ADE=0.181, Best_FDE=0.319 at Epoch 84
+train-0/228 (epoch 107), train_loss = 0.31071, time/batch = 0.06817 
+train-100/228 (epoch 107), train_loss = 0.31878, time/batch = 0.09018 
+train-200/228 (epoch 107), train_loss = 0.33614, time/batch = 0.08787 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.62it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.30it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.33it/s] 88%|████████▊ | 15/17 [00:00<00:00, 36.78it/s]100%|██████████| 17/17 [00:00<00:00, 34.71it/s]
+----epoch 107, train_loss=0.33254, ADE=0.182, FDE=0.316, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 108), train_loss = 0.32879, time/batch = 0.06952 
+train-100/228 (epoch 108), train_loss = 0.29586, time/batch = 0.08410 
+train-200/228 (epoch 108), train_loss = 0.33748, time/batch = 0.08765 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.79it/s] 41%|████      | 7/17 [00:00<00:00, 30.79it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.64it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.69it/s]100%|██████████| 17/17 [00:00<00:00, 34.31it/s]
+----epoch 108, train_loss=0.33243, ADE=0.181, FDE=0.317, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 109), train_loss = 0.31159, time/batch = 0.06971 
+train-100/228 (epoch 109), train_loss = 0.30647, time/batch = 0.08998 
+train-200/228 (epoch 109), train_loss = 0.34140, time/batch = 0.06638 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.28it/s] 41%|████      | 7/17 [00:00<00:00, 31.55it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.98it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.96it/s]100%|██████████| 17/17 [00:00<00:00, 33.72it/s]
+----epoch 109, train_loss=0.33270, ADE=0.184, FDE=0.324, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 110), train_loss = 0.32637, time/batch = 0.07270 
+train-100/228 (epoch 110), train_loss = 0.30003, time/batch = 0.08435 
+train-200/228 (epoch 110), train_loss = 0.32172, time/batch = 0.08773 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.82it/s] 41%|████      | 7/17 [00:00<00:00, 30.03it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.18it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.95it/s]100%|██████████| 17/17 [00:00<00:00, 33.03it/s]
+----epoch 110, train_loss=0.33188, ADE=0.179, FDE=0.319, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 111), train_loss = 0.32779, time/batch = 0.07851 
+train-100/228 (epoch 111), train_loss = 0.30523, time/batch = 0.08183 
+train-200/228 (epoch 111), train_loss = 0.33223, time/batch = 0.09432 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.32it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.74it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.39it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.64it/s]100%|██████████| 17/17 [00:00<00:00, 33.69it/s]
+----epoch 111, train_loss=0.33146, ADE=0.182, FDE=0.322, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 112), train_loss = 0.32339, time/batch = 0.07838 
+train-100/228 (epoch 112), train_loss = 0.30998, time/batch = 0.08786 
+train-200/228 (epoch 112), train_loss = 0.32641, time/batch = 0.08266 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.95it/s] 41%|████      | 7/17 [00:00<00:00, 31.39it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.93it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.48it/s]100%|██████████| 17/17 [00:00<00:00, 33.94it/s]
+----epoch 112, train_loss=0.33305, ADE=0.186, FDE=0.323, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 113), train_loss = 0.33148, time/batch = 0.07636 
+train-100/228 (epoch 113), train_loss = 0.30609, time/batch = 0.08389 
+train-200/228 (epoch 113), train_loss = 0.33440, time/batch = 0.08978 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.76it/s] 41%|████      | 7/17 [00:00<00:00, 31.61it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.39it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.07it/s]100%|██████████| 17/17 [00:00<00:00, 34.65it/s]
+----epoch 113, train_loss=0.33088, ADE=0.182, FDE=0.320, Best_ADE=0.182, Best_FDE=0.316 at Epoch 107
+train-0/228 (epoch 114), train_loss = 0.32015, time/batch = 0.06809 
+train-100/228 (epoch 114), train_loss = 0.29799, time/batch = 0.08670 
+train-200/228 (epoch 114), train_loss = 0.32745, time/batch = 0.09361 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.77it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.58it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.21it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.81it/s]100%|██████████| 17/17 [00:00<00:00, 33.75it/s]
+----epoch 114, train_loss=0.33193, ADE=0.180, FDE=0.315, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 115), train_loss = 0.31419, time/batch = 0.06937 
+train-100/228 (epoch 115), train_loss = 0.31268, time/batch = 0.08766 
+train-200/228 (epoch 115), train_loss = 0.32107, time/batch = 0.09209 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.38it/s] 41%|████      | 7/17 [00:00<00:00, 30.68it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.31it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.33it/s]100%|██████████| 17/17 [00:00<00:00, 34.38it/s]
+----epoch 115, train_loss=0.33146, ADE=0.181, FDE=0.320, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 116), train_loss = 0.32334, time/batch = 0.06949 
+train-100/228 (epoch 116), train_loss = 0.29615, time/batch = 0.08277 
+train-200/228 (epoch 116), train_loss = 0.33251, time/batch = 0.08628 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.03it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.50it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.41it/s]100%|██████████| 17/17 [00:00<00:00, 33.83it/s]100%|██████████| 17/17 [00:00<00:00, 33.02it/s]
+----epoch 116, train_loss=0.33174, ADE=0.181, FDE=0.326, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 117), train_loss = 0.32595, time/batch = 0.06900 
+train-100/228 (epoch 117), train_loss = 0.29726, time/batch = 0.08717 
+train-200/228 (epoch 117), train_loss = 0.32798, time/batch = 0.08629 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.23it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.55it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.87it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.06it/s]100%|██████████| 17/17 [00:00<00:00, 33.62it/s]
+----epoch 117, train_loss=0.33163, ADE=0.183, FDE=0.322, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 118), train_loss = 0.31710, time/batch = 0.06763 
+train-100/228 (epoch 118), train_loss = 0.30461, time/batch = 0.08401 
+train-200/228 (epoch 118), train_loss = 0.32456, time/batch = 0.09035 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.26it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.35it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.52it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.91it/s]100%|██████████| 17/17 [00:00<00:00, 34.23it/s]
+----epoch 118, train_loss=0.33082, ADE=0.184, FDE=0.320, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 119), train_loss = 0.31709, time/batch = 0.06606 
+train-100/228 (epoch 119), train_loss = 0.31351, time/batch = 0.08641 
+train-200/228 (epoch 119), train_loss = 0.33784, time/batch = 0.08792 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.81it/s] 41%|████      | 7/17 [00:00<00:00, 30.62it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.71it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.53it/s]100%|██████████| 17/17 [00:00<00:00, 32.53it/s]
+----epoch 119, train_loss=0.33132, ADE=0.185, FDE=0.325, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 120), train_loss = 0.31379, time/batch = 0.06692 
+train-100/228 (epoch 120), train_loss = 0.29916, time/batch = 0.08587 
+train-200/228 (epoch 120), train_loss = 0.33455, time/batch = 0.08799 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 31.29it/s] 47%|████▋     | 8/17 [00:00<00:00, 31.15it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.42it/s]100%|██████████| 17/17 [00:00<00:00, 34.39it/s]100%|██████████| 17/17 [00:00<00:00, 33.72it/s]
+----epoch 120, train_loss=0.33079, ADE=0.181, FDE=0.317, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 121), train_loss = 0.31861, time/batch = 0.07186 
+train-100/228 (epoch 121), train_loss = 0.29833, time/batch = 0.08705 
+train-200/228 (epoch 121), train_loss = 0.32763, time/batch = 0.09370 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.21it/s] 41%|████      | 7/17 [00:00<00:00, 31.38it/s] 71%|███████   | 12/17 [00:00<00:00, 36.11it/s] 94%|█████████▍| 16/17 [00:00<00:00, 36.04it/s]100%|██████████| 17/17 [00:00<00:00, 35.43it/s]
+----epoch 121, train_loss=0.33186, ADE=0.182, FDE=0.318, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 122), train_loss = 0.33450, time/batch = 0.06750 
+train-100/228 (epoch 122), train_loss = 0.29756, time/batch = 0.08384 
+train-200/228 (epoch 122), train_loss = 0.32654, time/batch = 0.08762 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.21it/s] 41%|████      | 7/17 [00:00<00:00, 29.86it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.90it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.23it/s]100%|██████████| 17/17 [00:00<00:00, 33.17it/s]
+----epoch 122, train_loss=0.33187, ADE=0.181, FDE=0.317, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 123), train_loss = 0.32787, time/batch = 0.07761 
+train-100/228 (epoch 123), train_loss = 0.28713, time/batch = 0.08679 
+train-200/228 (epoch 123), train_loss = 0.32309, time/batch = 0.08472 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.44it/s] 41%|████      | 7/17 [00:00<00:00, 31.48it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.91it/s] 88%|████████▊ | 15/17 [00:00<00:00, 36.07it/s]100%|██████████| 17/17 [00:00<00:00, 35.46it/s]
+----epoch 123, train_loss=0.33046, ADE=0.180, FDE=0.320, Best_ADE=0.180, Best_FDE=0.315 at Epoch 114
+train-0/228 (epoch 124), train_loss = 0.30664, time/batch = 0.07226 
+train-100/228 (epoch 124), train_loss = 0.31173, time/batch = 0.08993 
+train-200/228 (epoch 124), train_loss = 0.33338, time/batch = 0.08450 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.73it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.14it/s] 76%|███████▋  | 13/17 [00:00<00:00, 35.17it/s]100%|██████████| 17/17 [00:00<00:00, 35.59it/s]100%|██████████| 17/17 [00:00<00:00, 34.29it/s]
+----epoch 124, train_loss=0.33073, ADE=0.178, FDE=0.315, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 125), train_loss = 0.32686, time/batch = 0.06895 
+train-100/228 (epoch 125), train_loss = 0.30927, time/batch = 0.09016 
+train-200/228 (epoch 125), train_loss = 0.31739, time/batch = 0.08569 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.70it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.80it/s] 59%|█████▉    | 10/17 [00:00<00:00, 33.02it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.94it/s]100%|██████████| 17/17 [00:00<00:00, 34.42it/s]
+----epoch 125, train_loss=0.33086, ADE=0.179, FDE=0.317, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 126), train_loss = 0.31949, time/batch = 0.06865 
+train-100/228 (epoch 126), train_loss = 0.31146, time/batch = 0.08705 
+train-200/228 (epoch 126), train_loss = 0.32662, time/batch = 0.08781 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.97it/s] 41%|████      | 7/17 [00:00<00:00, 31.24it/s] 71%|███████   | 12/17 [00:00<00:00, 36.25it/s] 94%|█████████▍| 16/17 [00:00<00:00, 34.98it/s]100%|██████████| 17/17 [00:00<00:00, 34.88it/s]
+----epoch 126, train_loss=0.33012, ADE=0.179, FDE=0.318, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 127), train_loss = 0.34124, time/batch = 0.07030 
+train-100/228 (epoch 127), train_loss = 0.30838, time/batch = 0.09038 
+train-200/228 (epoch 127), train_loss = 0.31852, time/batch = 0.08641 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.50it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.79it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.69it/s] 88%|████████▊ | 15/17 [00:00<00:00, 36.50it/s]100%|██████████| 17/17 [00:00<00:00, 34.64it/s]
+----epoch 127, train_loss=0.32949, ADE=0.183, FDE=0.319, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 128), train_loss = 0.31992, time/batch = 0.06639 
+train-100/228 (epoch 128), train_loss = 0.30365, time/batch = 0.08943 
+train-200/228 (epoch 128), train_loss = 0.33051, time/batch = 0.08315 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.67it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.15it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.28it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.09it/s]100%|██████████| 17/17 [00:00<00:00, 33.64it/s]
+----epoch 128, train_loss=0.33126, ADE=0.180, FDE=0.319, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 129), train_loss = 0.31840, time/batch = 0.07011 
+train-100/228 (epoch 129), train_loss = 0.30752, time/batch = 0.08439 
+train-200/228 (epoch 129), train_loss = 0.33126, time/batch = 0.08571 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.69it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.78it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.76it/s] 88%|████████▊ | 15/17 [00:00<00:00, 36.93it/s]100%|██████████| 17/17 [00:00<00:00, 34.98it/s]
+----epoch 129, train_loss=0.32927, ADE=0.180, FDE=0.319, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 130), train_loss = 0.31062, time/batch = 0.06483 
+train-100/228 (epoch 130), train_loss = 0.30743, time/batch = 0.08592 
+train-200/228 (epoch 130), train_loss = 0.33060, time/batch = 0.08892 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.73it/s] 41%|████      | 7/17 [00:00<00:00, 31.37it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.57it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.65it/s]100%|██████████| 17/17 [00:00<00:00, 34.03it/s]
+----epoch 130, train_loss=0.32957, ADE=0.180, FDE=0.320, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 131), train_loss = 0.32898, time/batch = 0.06842 
+train-100/228 (epoch 131), train_loss = 0.29575, time/batch = 0.09057 
+train-200/228 (epoch 131), train_loss = 0.32381, time/batch = 0.08924 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 29.88it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.76it/s] 76%|███████▋  | 13/17 [00:00<00:00, 34.96it/s]100%|██████████| 17/17 [00:00<00:00, 35.24it/s]100%|██████████| 17/17 [00:00<00:00, 34.15it/s]
+----epoch 131, train_loss=0.32906, ADE=0.179, FDE=0.318, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 132), train_loss = 0.32340, time/batch = 0.06875 
+train-100/228 (epoch 132), train_loss = 0.30417, time/batch = 0.09840 
+train-200/228 (epoch 132), train_loss = 0.32517, time/batch = 0.09462 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.38it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.33it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.47it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.00it/s]100%|██████████| 17/17 [00:00<00:00, 32.88it/s]
+----epoch 132, train_loss=0.32960, ADE=0.182, FDE=0.322, Best_ADE=0.178, Best_FDE=0.315 at Epoch 124
+train-0/228 (epoch 133), train_loss = 0.32261, time/batch = 0.07087 
+train-100/228 (epoch 133), train_loss = 0.28957, time/batch = 0.08146 
+train-200/228 (epoch 133), train_loss = 0.32695, time/batch = 0.08866 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 25.47it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.74it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.33it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.28it/s]100%|██████████| 17/17 [00:00<00:00, 32.67it/s]
+----epoch 133, train_loss=0.32940, ADE=0.179, FDE=0.314, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 134), train_loss = 0.31089, time/batch = 0.08138 
+train-100/228 (epoch 134), train_loss = 0.30012, time/batch = 0.09015 
+train-200/228 (epoch 134), train_loss = 0.32815, time/batch = 0.09399 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.44it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.28it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.39it/s] 82%|████████▏ | 14/17 [00:00<00:00, 35.07it/s]100%|██████████| 17/17 [00:00<00:00, 32.87it/s]
+----epoch 134, train_loss=0.32966, ADE=0.181, FDE=0.320, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 135), train_loss = 0.32868, time/batch = 0.06800 
+train-100/228 (epoch 135), train_loss = 0.31047, time/batch = 0.09455 
+train-200/228 (epoch 135), train_loss = 0.32658, time/batch = 0.08831 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 26.91it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.67it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.69it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.06it/s]100%|██████████| 17/17 [00:00<00:00, 32.67it/s]
+----epoch 135, train_loss=0.33071, ADE=0.181, FDE=0.324, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 136), train_loss = 0.31059, time/batch = 0.07333 
+train-100/228 (epoch 136), train_loss = 0.28926, time/batch = 0.08541 
+train-200/228 (epoch 136), train_loss = 0.33234, time/batch = 0.09050 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.04it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.85it/s] 53%|█████▎    | 9/17 [00:00<00:00, 28.79it/s] 82%|████████▏ | 14/17 [00:00<00:00, 35.34it/s]100%|██████████| 17/17 [00:00<00:00, 33.12it/s]
+----epoch 136, train_loss=0.32893, ADE=0.180, FDE=0.320, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 137), train_loss = 0.32187, time/batch = 0.07126 
+train-100/228 (epoch 137), train_loss = 0.29805, time/batch = 0.08672 
+train-200/228 (epoch 137), train_loss = 0.32060, time/batch = 0.08527 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.42it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.58it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.25it/s] 82%|████████▏ | 14/17 [00:00<00:00, 33.59it/s]100%|██████████| 17/17 [00:00<00:00, 32.68it/s]
+----epoch 137, train_loss=0.32762, ADE=0.179, FDE=0.322, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 138), train_loss = 0.30672, time/batch = 0.07542 
+train-100/228 (epoch 138), train_loss = 0.29119, time/batch = 0.08872 
+train-200/228 (epoch 138), train_loss = 0.33401, time/batch = 0.08808 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 37.41it/s] 47%|████▋     | 8/17 [00:00<00:00, 33.37it/s] 76%|███████▋  | 13/17 [00:00<00:00, 36.06it/s]100%|██████████| 17/17 [00:00<00:00, 35.71it/s]100%|██████████| 17/17 [00:00<00:00, 35.57it/s]
+----epoch 138, train_loss=0.33063, ADE=0.186, FDE=0.335, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 139), train_loss = 0.32595, time/batch = 0.07217 
+train-100/228 (epoch 139), train_loss = 0.29484, time/batch = 0.08329 
+train-200/228 (epoch 139), train_loss = 0.33125, time/batch = 0.09101 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.34it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.95it/s] 59%|█████▉    | 10/17 [00:00<00:00, 31.81it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.52it/s]100%|██████████| 17/17 [00:00<00:00, 33.02it/s]
+----epoch 139, train_loss=0.32838, ADE=0.179, FDE=0.316, Best_ADE=0.179, Best_FDE=0.314 at Epoch 133
+train-0/228 (epoch 140), train_loss = 0.32334, time/batch = 0.06544 
+train-100/228 (epoch 140), train_loss = 0.29594, time/batch = 0.08867 
+train-200/228 (epoch 140), train_loss = 0.33127, time/batch = 0.09275 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.67it/s] 41%|████      | 7/17 [00:00<00:00, 29.68it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.76it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.64it/s]100%|██████████| 17/17 [00:00<00:00, 33.27it/s]
+----epoch 140, train_loss=0.32913, ADE=0.178, FDE=0.312, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 141), train_loss = 0.30560, time/batch = 0.07041 
+train-100/228 (epoch 141), train_loss = 0.29605, time/batch = 0.08938 
+train-200/228 (epoch 141), train_loss = 0.33694, time/batch = 0.08852 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.39it/s] 47%|████▋     | 8/17 [00:00<00:00, 30.34it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.83it/s]100%|██████████| 17/17 [00:00<00:00, 33.05it/s]100%|██████████| 17/17 [00:00<00:00, 32.61it/s]
+----epoch 141, train_loss=0.32870, ADE=0.181, FDE=0.319, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 142), train_loss = 0.31889, time/batch = 0.07339 
+train-100/228 (epoch 142), train_loss = 0.29797, time/batch = 0.09086 
+train-200/228 (epoch 142), train_loss = 0.33983, time/batch = 0.08839 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.23it/s] 41%|████      | 7/17 [00:00<00:00, 30.39it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.90it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.99it/s]100%|██████████| 17/17 [00:00<00:00, 33.80it/s]
+----epoch 142, train_loss=0.32806, ADE=0.183, FDE=0.326, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 143), train_loss = 0.30751, time/batch = 0.06724 
+train-100/228 (epoch 143), train_loss = 0.30286, time/batch = 0.08245 
+train-200/228 (epoch 143), train_loss = 0.32097, time/batch = 0.09028 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 27.74it/s] 41%|████      | 7/17 [00:00<00:00, 30.75it/s] 65%|██████▍   | 11/17 [00:00<00:00, 34.28it/s] 88%|████████▊ | 15/17 [00:00<00:00, 35.12it/s]100%|██████████| 17/17 [00:00<00:00, 33.87it/s]
+----epoch 143, train_loss=0.32856, ADE=0.184, FDE=0.325, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 144), train_loss = 0.31385, time/batch = 0.06695 
+train-100/228 (epoch 144), train_loss = 0.30015, time/batch = 0.09426 
+train-200/228 (epoch 144), train_loss = 0.34072, time/batch = 0.08898 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.10it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.58it/s] 59%|█████▉    | 10/17 [00:00<00:00, 32.60it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.69it/s]100%|██████████| 17/17 [00:00<00:00, 34.12it/s]
+----epoch 144, train_loss=0.32880, ADE=0.180, FDE=0.322, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 145), train_loss = 0.30645, time/batch = 0.06878 
+train-100/228 (epoch 145), train_loss = 0.30670, time/batch = 0.08945 
+train-200/228 (epoch 145), train_loss = 0.32286, time/batch = 0.09568 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.94it/s] 35%|███▌      | 6/17 [00:00<00:00, 27.81it/s] 59%|█████▉    | 10/17 [00:00<00:00, 30.52it/s] 82%|████████▏ | 14/17 [00:00<00:00, 33.91it/s]100%|██████████| 17/17 [00:00<00:00, 32.57it/s]
+----epoch 145, train_loss=0.32852, ADE=0.183, FDE=0.322, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 146), train_loss = 0.32113, time/batch = 0.07211 
+train-100/228 (epoch 146), train_loss = 0.28941, time/batch = 0.08341 
+train-200/228 (epoch 146), train_loss = 0.33285, time/batch = 0.08815 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.19it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.11it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.12it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.15it/s]100%|██████████| 17/17 [00:00<00:00, 34.62it/s]100%|██████████| 17/17 [00:00<00:00, 32.72it/s]
+----epoch 146, train_loss=0.32747, ADE=0.182, FDE=0.323, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 147), train_loss = 0.31122, time/batch = 0.06972 
+train-100/228 (epoch 147), train_loss = 0.30419, time/batch = 0.08740 
+train-200/228 (epoch 147), train_loss = 0.32265, time/batch = 0.09177 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.45it/s] 41%|████      | 7/17 [00:00<00:00, 30.52it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.14it/s] 88%|████████▊ | 15/17 [00:00<00:00, 34.42it/s]100%|██████████| 17/17 [00:00<00:00, 33.40it/s]
+----epoch 147, train_loss=0.32661, ADE=0.180, FDE=0.320, Best_ADE=0.178, Best_FDE=0.312 at Epoch 140
+train-0/228 (epoch 148), train_loss = 0.31554, time/batch = 0.07398 
+train-100/228 (epoch 148), train_loss = 0.29925, time/batch = 0.08555 
+train-200/228 (epoch 148), train_loss = 0.31748, time/batch = 0.08499 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.12it/s] 35%|███▌      | 6/17 [00:00<00:00, 28.36it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.01it/s] 82%|████████▏ | 14/17 [00:00<00:00, 35.13it/s]100%|██████████| 17/17 [00:00<00:00, 33.43it/s]
+----epoch 148, train_loss=0.32798, ADE=0.177, FDE=0.311, Best_ADE=0.177, Best_FDE=0.311 at Epoch 148
+train-0/228 (epoch 149), train_loss = 0.31500, time/batch = 0.06839 
+train-100/228 (epoch 149), train_loss = 0.30680, time/batch = 0.09203 
+train-200/228 (epoch 149), train_loss = 0.31310, time/batch = 0.08793 
+  0%|          | 0/17 [00:00<?, ?it/s] 24%|██▎       | 4/17 [00:00<00:00, 30.86it/s] 47%|████▋     | 8/17 [00:00<00:00, 29.93it/s] 76%|███████▋  | 13/17 [00:00<00:00, 33.43it/s]100%|██████████| 17/17 [00:00<00:00, 34.24it/s]100%|██████████| 17/17 [00:00<00:00, 33.25it/s]
+----epoch 149, train_loss=0.32765, ADE=0.179, FDE=0.313, Best_ADE=0.177, Best_FDE=0.311 at Epoch 148
+train-0/228 (epoch 150), train_loss = 0.31477, time/batch = 0.06738 
+train-100/228 (epoch 150), train_loss = 0.28969, time/batch = 0.08683 
+train-200/228 (epoch 150), train_loss = 0.29558, time/batch = 0.08743 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.80it/s] 41%|████      | 7/17 [00:00<00:00, 31.30it/s] 65%|██████▍   | 11/17 [00:00<00:00, 33.81it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.79it/s]100%|██████████| 17/17 [00:00<00:00, 33.55it/s]
+----epoch 150, train_loss=0.32744, ADE=0.180, FDE=0.318, Best_ADE=0.177, Best_FDE=0.311 at Epoch 148
+train-0/228 (epoch 151), train_loss = 0.32011, time/batch = 0.06945 
+train-100/228 (epoch 151), train_loss = 0.28578, time/batch = 0.08537 
+train-200/228 (epoch 151), train_loss = 0.31922, time/batch = 0.08843 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 28.91it/s] 41%|████      | 7/17 [00:00<00:00, 31.73it/s] 65%|██████▍   | 11/17 [00:00<00:00, 32.79it/s] 88%|████████▊ | 15/17 [00:00<00:00, 33.14it/s]100%|██████████| 17/17 [00:00<00:00, 33.23it/s]
+----epoch 151, train_loss=0.32763, ADE=0.181, FDE=0.323, Best_ADE=0.177, Best_FDE=0.311 at Epoch 148
+train-0/228 (epoch 152), train_loss = 0.31991, time/batch = 0.07203 
+train-100/228 (epoch 152), train_loss = 0.28746, time/batch = 0.08884 
+train-200/228 (epoch 152), train_loss = 0.32275, time/batch = 0.08971 
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 29.65it/s] 35%|███▌      | 6/17 [00:00<00:00, 29.23it/s] 53%|█████▎    | 9/17 [00:00<00:00, 29.03it/s] 82%|████████▏ | 14/17 [00:00<00:00, 34.79it/s]100%|██████████| 17/17 [00:00<00:00, 33.24it/s]

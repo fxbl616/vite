@@ -1,0 +1,41 @@
+/root/autodl-tmp/vite/src/star.py:1019: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.temporal_encoder = nn.TransformerEncoder(temporal_layer, num_layers=1)
+Creating pre-processed data from raw data.
+0 360
+100 360
+200 360
+300 360
+0 389
+100 389
+200 389
+300 389
+0 148
+100 148
+0 204
+100 204
+200 204
+0 118
+100 118
+0 137
+100 137
+0 415
+100 415
+200 415
+300 415
+400 415
+0 434
+100 434
+200 434
+300 434
+400 434
+Done.
+Preparing data batches.
+Done.
+Total number of training batches: 109
+Total number of test batches: 136
+Testing begin
+./output/univ/ab_univ_adaptive_no_spatial/ab_univ_adaptive_no_spatial_best.tar
+Loading checkpoint
+Loaded checkpoint at epoch 16
+  0%|          | 0/136 [00:00<?, ?it/s]  1%|          | 1/136 [00:00<00:40,  3.30it/s]  6%|▌         | 8/136 [00:00<00:05, 23.83it/s] 11%|█         | 15/136 [00:00<00:03, 36.64it/s] 16%|█▌        | 22/136 [00:00<00:02, 44.29it/s] 21%|██▏       | 29/136 [00:00<00:02, 50.03it/s] 26%|██▋       | 36/136 [00:00<00:01, 54.75it/s] 32%|███▏      | 43/136 [00:00<00:01, 57.18it/s] 37%|███▋      | 50/136 [00:01<00:01, 58.57it/s] 42%|████▏     | 57/136 [00:01<00:01, 59.57it/s] 47%|████▋     | 64/136 [00:01<00:01, 61.90it/s] 52%|█████▏    | 71/136 [00:01<00:01, 62.12it/s] 57%|█████▋    | 78/136 [00:01<00:00, 60.61it/s] 62%|██████▎   | 85/136 [00:01<00:00, 60.11it/s] 68%|██████▊   | 92/136 [00:01<00:00, 60.34it/s] 73%|███████▎  | 99/136 [00:01<00:00, 59.07it/s] 78%|███████▊  | 106/136 [00:02<00:00, 59.57it/s] 83%|████████▎ | 113/136 [00:02<00:00, 59.74it/s] 88%|████████▊ | 119/136 [00:02<00:00, 59.23it/s] 92%|█████████▏| 125/136 [00:02<00:00, 58.87it/s] 96%|█████████▋| 131/136 [00:02<00:00, 55.43it/s]100%|██████████| 136/136 [00:02<00:00, 53.14it/s]
+Set: 4, epoch: best,test_error: 0.21896488936175204 test_final_error: 0.37609740083628207
